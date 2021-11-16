@@ -227,7 +227,7 @@ p{
 
 /* Hero Section */
 #hero{
-    background-image: url("./img/053.jpg");
+
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -760,7 +760,7 @@ p{
     /* end contact */
 }
 /* end media query tablet */
-
+/*
 /* Media query desktop */
 @media only screen and (min-width: 1200px){
     /* Header */

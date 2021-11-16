@@ -23,3 +23,24 @@ menu_item.forEach(item=>{
         mobile_menu.classList.toggle('active');
     });
 });
+
+/* Banner changer */
+var images = [], x = -1;
+images [0] = "Becca/img/Banner/067.jpg"
+images [1] = "Becca/img/Banner/068.jpg"
+images [2] = "Becca/img/Banner/069.jpg"
+images [3] = "Becca/img/Banner/070.jpg"
+images [4] = "Becca/img/Banner/071.jpg"
+images [5] = "Becca/img/Banner/072.jpg"
+
+function changeImage()
+{
+    var img = document.getElementById("hero");
+    img.style.backgroundImage = images[x];
+    x++;
+
+    if(x >= images.length){
+        x = 0;
+    }
+    var timerid = setInterval(changeImage(), 1000);
+}
